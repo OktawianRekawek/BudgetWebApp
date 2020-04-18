@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Dodaj wydatek</title>
+  <title>Mój budżet - Dodaj wydatek</title>
 
   <meta name="description" content="Aplikacja do tworzenia budżetu domowego!">
   <meta name="keywords" content="budżet, finanse, osobiste, domowy, pieniądze">
@@ -18,7 +18,35 @@
 </head>
 
 <body>
+  <div id="container">
+    <form>
 
+
+      <input type="text" placeholder="kwota" onfocus="this.placeholder=''" onblur="this.placeholder='kwota'">
+      <input type="date" placeholder="rrrr-mm-dd" onfocus="this.placeholder=''" onblur="this.placeholder='rrrr-mm-dd'">
+      <fieldset>
+        <legend>
+          Sposób płatności
+        </legend>
+        <div><label><input type="radio" value="1" name="payMethod" checked>Gotówka</label></div>
+        <div><label><input type="radio" value="2" name="payMethod">Karta Debetowa</label></div>
+        <div><label><input type="radio" value="3" name="payMethod">Karta Kredytowa</label></div>
+      </fieldset>
+      <select name="category[]">
+
+        <option>jedzenie</option>
+        <option>mieszkanie</option>
+        <option>transport</option>
+        <option>inne</option>
+      </select>
+      <textarea name="komentarz" id="komentarz" cols="80" rows="4" maxlength="160" minlength="10"></textarea>
+      <input type="submit" value="Dodaj">
+
+    </form>
+    <a href="menu.html" class="button">
+      Anuluj
+    </a>
+  </div>
 
 
 

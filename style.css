@@ -17,7 +17,11 @@ body {
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=date],
+textarea,
+select,
+fieldset {
   width: 300px;
   background-color: #efefef;
   color: #666;
@@ -28,11 +32,17 @@ input[type=email] {
   padding: 10px;
   box-sizing: border-box;
   outline: none;
+  resize: none;
+  font-family: Arial;
 }
 
 input[type=text]:focus,
 input[type=password]:focus,
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=date]:focus,
+textarea:focus,
+select:focus,
+fieldset:hover {
   -webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
   -moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
   box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
@@ -40,6 +50,12 @@ input[type=email]:focus {
   background-color: #e9f3e9;
   color: #428c42;
 
+}
+
+fieldset legend {
+  float: left;
+  width: 100%;
+  padding: 3px;
 }
 
 input[type=submit] {
@@ -97,6 +113,7 @@ input:-ms-input-placeholder {
 input:focus:-ms-input-placeholder {
   color: #428c42;
 }
+
 
 .button {
   display: block;
