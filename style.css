@@ -131,4 +131,9 @@ nav {
   height: 100vh;
   width: 20vw;
   background-color: #555;
+  padding-top: 50px;
+}
+
+ul {
+  margin: 0;
 }
