@@ -193,7 +193,6 @@ input:focus:-ms-input-placeholder {
   margin-top: 25px;
   height: 50px;
   width: 497px;
-  background-color: aqua;
 }
 
 .expanses-pie {
@@ -201,7 +200,6 @@ input:focus:-ms-input-placeholder {
   margin-top: 25px;
   height: 50px;
   width: 497px;
-  background-color: darkred;
 }
 
 .slogan {
@@ -210,4 +208,9 @@ input:focus:-ms-input-placeholder {
   height: 50px;
   width: 1000px;
   background-color: green;
+}
+
+.piechart {
+  width: 100%;
+
 }
