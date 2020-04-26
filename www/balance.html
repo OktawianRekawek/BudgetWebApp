@@ -18,8 +18,18 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="wide-container">
+    <form>
+      <input type="date" placeholder="rrrr-mm-dd" onfocus="this.placeholder=''" onblur="this.placeholder='rrrr-mm-dd'">
+      <input type="date" placeholder="rrrr-mm-dd" onfocus="this.placeholder=''" onblur="this.placeholder='rrrr-mm-dd'">
+      <select name="period[]">
 
+        <option>bieżący miesiąc</option>
+        <option>poprzedni miesiąc</option>
+        <option>bieżący rok</option>
+        <option>niestandardowy</option>
+      </select>
+    </form>
   </div>
 
 
