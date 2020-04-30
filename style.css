@@ -3,6 +3,7 @@ body {
   background-image: url("img/escheresque_ste.png");
   font-size: 20px;
   margin: 0;
+  font-family: Arial;
 }
 
 #container {
@@ -159,34 +160,47 @@ input:focus:-ms-input-placeholder {
 .incomes {
   display: inline-block;
   margin-top: 25px;
-  height: 50px;
-  width: 497px;
-  background-color: aqua;
+  width: 496px;
+  border-right: 1px solid #555555;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.incomes p,
+.expanses p {
+  display: inline-block;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.incomes div p:last-child,
+.expanses div p:last-child {
+  float: right;
+  padding-right: 25px;
+}
+
+.table-header {
+  border-bottom: 1px dotted #555555;
+  font-size: 28px;
 }
 
 .expanses {
   display: inline-block;
   margin-top: 25px;
-  height: 50px;
-  width: 497px;
-  background-color: darkred;
+  width: 496px;
+  border-left: 1px solid #555555;
 }
 
-.incomes-sum {
-  display: inline-block;
-  margin-top: 25px;
-  height: 50px;
-  width: 497px;
-  background-color: aqua;
-}
-
+.incomes-sum,
 .expanses-sum {
-  display: inline-block;
-  margin-top: 25px;
-  height: 50px;
-  width: 497px;
-  background-color: darkred;
+  border-top: 1px dotted #555555;
+  width: 496px;
+  font-size: 28px;
 }
+
 
 .incomes-pie {
   display: inline-block;
@@ -202,12 +216,9 @@ input:focus:-ms-input-placeholder {
   width: 497px;
 }
 
-.slogan {
-  display: inline-block;
+.balance {
   margin-top: 25px;
-  height: 50px;
   width: 1000px;
-  font-family: Arial;
   font-size: 32px;
   text-align: center;
 }
